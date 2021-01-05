@@ -20,6 +20,7 @@ public class Word {
     @Column (name = "THIRD_SENTENCE")
     private String thirdSentence;
 
+//test git
     public String getKoWord() {
         return koWord;
     }
