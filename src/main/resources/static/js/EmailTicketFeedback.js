@@ -4,7 +4,7 @@ function emailSendFeedbackTicket() {
         var Spineru= document.getElementById("incercam");
         Spineru.className="spinner";
 
-        var changePls = document.getElementById("faInvizibil");
+        var changePls = document.getElementById("InvisiblePlease");
 
         // var changePls= document.getElementsByClassName("faInvizibilitate");
         changePls.id="faInvizibilPls";

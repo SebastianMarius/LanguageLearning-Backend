@@ -48,7 +48,7 @@ public class WordController {
         System.out.println(learningAppService.getSentencesByWord("남자"));
          return this.learningAppService.getSentencesByWord("남자");
 
-        //IF IT WORKS PLS DON T TOUCH IT
+
       }}
     */
 
@@ -61,7 +61,7 @@ public class WordController {
 //        System.out.println(learningAppService.getSentencesByWord(word));
         return this.learningAppService.getSentencesByWord(word);
 
-        //IF IT WORKS PLS DON T TOUCH IT
+
     }
 
     @GetMapping("/randomSentenceBeginner")
