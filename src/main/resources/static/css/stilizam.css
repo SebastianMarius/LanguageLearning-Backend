@@ -1,0 +1,387 @@
+#bodyul{
+
+    background-color: turquoise;
+
+
+
+}
+
+.englishWordInline{
+
+    display: inline-block;
+
+
+}
+.koreanWordInline{
+    display: inline-block;
+    padding-top: 1px;
+}
+
+.firstSentenceInline{
+    display: inline-block;
+    padding-top: 1px;
+    font-size: 30px;
+}
+
+.secoundSentenceInline{
+    display: inline-block;
+    padding-top: -221px;
+    font-size: 30px;
+}
+
+.thirdSentenceInline{
+    display: inline-block;
+    padding-top: -10px;
+    font-size: 30px;
+}
+
+.inputInline{
+    display: inline-block;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 600px;
+    position: relative;
+    margin: auto;
+    height: 500px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*aici incepe codul pentru home bara de sus */
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+/*de aci vine cssul pt loading*/
+
+
+/*.test{*/
+
+    /*visibility: hidden;*/
+
+/*}*/
+
+
+/*de aci incepe loaderu*/
+
+
+
+.faInvizibilPls{
+    visibility: hidden;
+}
+
+#faInvizibilPls{
+    visibility: hidden;
+}
+
+#bodyul {
+    background: #000000;
+    padding-top: 50px;
+    overflow: hidden;
+
+}
+
+.spinner {
+    /*position: relative;*/
+    position: relative;
+
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.1), #000000 90%);
+    transform-origin: 50% 60%;
+    transform: perspective(200px) rotateX(66deg);
+    animation: spinner-wiggle 1.2s infinite;
+
+}
+.spinner:before,
+.spinner:after {
+    content: "";
+    position: absolute;
+    margin: -4px;
+    box-sizing: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    opacity: .05;
+    border: inherit;
+    border-color: transparent;
+    animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, spinner-fade 1.2s linear infinite;
+
+}
+
+.spinner:before {
+    border-top-color: #66e6ff;
+
+}
+
+.spinner:after {
+    border-top-color: #f0db75;
+    animation-delay: 0.3s;
+
+}
+
+@keyframes spinner-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spinner-fade {
+    20% {
+        opacity: .1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: .1;
+    }
+}
+
+#loader{
+
+    padding-left: 150px;
+
+
+
+}
+
+/*lucruri pt ticket and feedback*/
+
+#bodyBeforeOnClick{
+    /*background: url("../photoes/whitepohot.jpg");*/
+    background-color: rgb(253, 254, 254);
+
+}
+
+
+#whatShouldFeedbackContain{
+    color: #AED6F1;
+
+    padding-top: 45px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 140px;
+    background-image: url("../photoes/thisbackgroundblack.jpg");
+    /*background-color: rgb(248, 196, 113);*/
+    /*background-color: #4caf50;*/
+    font-family: "cursive";
+    border-radius: 22px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.fa-check{
+    color: dodgerblue;
+}
+
+.listaFeedback{
+    font-size: 30px;
+}
+
+/*AICI INCEPE YOUR OPPINION MATTER*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+span{
+    margin: 0 15px;
+    line-height: .7;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+    animation: span 3s ease-in infinite alternate;
+}
+.oppinion{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    background: #85C1E9;
+}
+.letter{
+    display: inline-flex;
+    height: 30px;
+    width: 27px;
+    /* border: 2.5px solid #FF1EAD; */
+    border: 2.35px solid black;
+    border-radius: 14px;
+    box-shadow:
+            0 0 2px rgba(0, 0, 0, .75),
+            inset 0 0 2px rgba(0, 0, 0, .45);
+
+    animation: letter 3s ease-in-out infinite alternate;
+}
+@keyframes span {
+    0%,30%{ margin: 0 15px; }
+    70%,100%{ margin: 0 5px; }
+}
+@keyframes letter {
+    0%,30%{ width: 27px; }
+    70%,100%{ width: 30vw; }
+}
+
+/*aici se gatayour oppinion matter*/
+
+#ticketHEADER{
+    font-family: Serif;
+}
+
+/*aici footerul*/
+
+.fixed_footer{
+    width: 100%;
+    height: 130px;
+    background: #111;
+    position: fixed; left: 0; bottom: 0;
+    z-index: -100;
+    margin-top: 30px;
+}
+.fixed_footer p{
+    color: #696969;
+    /*column-count: 2;*/
+    /*column-gap: 50px;*/
+    font-size: 1em;
+    font-weight: 300;
+    padding-top: 60px;
+    text-align: center;
+
+}
+
+/* AICI SE GATA LOADERU */
+
+
+
+/*testam testam load*/
+
