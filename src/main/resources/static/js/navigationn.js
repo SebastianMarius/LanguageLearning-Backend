@@ -35,7 +35,7 @@ function myFunction() {
             var test1= "남자";
             var test2= "이에요";
 
-            document.getElementById("firstS").innerHTML=test1;
+            // document.getElementById("firstS").innerHTML=test1;
             document.getElementById("test12").innerHTML=test2;
 
 
