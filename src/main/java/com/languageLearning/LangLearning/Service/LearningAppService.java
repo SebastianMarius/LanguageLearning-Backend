@@ -23,7 +23,7 @@ public class LearningAppService {
 
 
 
-           Map <String, KoWords> koWordsMap = new HashMap();
+           Map <String, KoWords> koWordsMap = new HashMap<>();
 
             Iterable <Word> words = this.wordRepository.findAll();
 
@@ -49,37 +49,47 @@ public class LearningAppService {
 
 
 
+//    int wordsCounting=0;
+    public Map<Long, KoWords> KoreanSentencesMapData(){
 
-    public KoWords getBeginnerLevelRandomWords(){
 
-            Iterable <Word> wordIterable = this.wordRepository.findAll();
 
-            Map <Long, KoWords> integerKoWordsMap= new HashMap();
+          Iterable <Word> wordIterable = this.wordRepository.findAll();
 
-            wordIterable.forEach( wordul -> {
+        Map <Long, KoWords> integerKoWordsMap= new HashMap<>();
 
-                    KoWords koWords = new KoWords();
-                    koWords.setKowordId(wordul.getWordID());
-                    koWords.setKoword(wordul.getKoWord());
-                    koWords.setKowordTranslation(wordul.getWordTranslation());
-                    koWords.setKorfirstSentence(wordul.getFirstSentence());
-                    koWords.setKosecondSentence(wordul.getSecoundSentence());
-                    koWords.setKothirdSentence(wordul.getThirdSentence());
-                    integerKoWordsMap.put(wordul.getWordID(), koWords);
+        wordIterable.forEach( wordul -> {
 
-            } );
+            KoWords koWords = new KoWords();
+            koWords.setKowordId(wordul.getWordID());
+            koWords.setKoword(wordul.getKoWord());
+            koWords.setKowordTranslation(wordul.getWordTranslation());
+            koWords.setKorfirstSentence(wordul.getFirstSentence());
+            koWords.setKosecondSentence(wordul.getSecoundSentence());
+            koWords.setKothirdSentence(wordul.getThirdSentence());
+            integerKoWordsMap.put(wordul.getWordID(), koWords);
+//            wordsCounting++;
 
-                        Random random = new Random();
-                      int randomId = random.nextInt(2);
+        } );
+            return integerKoWordsMap;
+    }
+
+
+
+    public KoWords getBeginnerLevelRandomWords( ){
+
+                      Map<Long,KoWords> ShowKoreanData = KoreanSentencesMapData();
+
+                      Random random = new Random();
+                      int randomId = random.nextInt(ShowKoreanData.size());
                       randomId++;
 
                       long randomIdLong= (long) randomId;
 
 
+                      return ShowKoreanData.get(randomIdLong);
 
-
-
-                    return integerKoWordsMap.get(randomIdLong);
+//                    return integerKoWordsMap.get(randomIdLong);
 
 
         }

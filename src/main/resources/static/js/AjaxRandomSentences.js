@@ -8,7 +8,6 @@ function ajaxEndpoint() {
 
             jSonObiect=JSON.parse(this.responseText);
 
-            document.getElementById("testoare").innerHTML=jSonObiect.korfirstSentence;
 
             console.log(jSonObiect);
         }
